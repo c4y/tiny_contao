@@ -15,7 +15,7 @@
  * Initialize the system
  */
 define('TL_MODE', 'BE');
-require_once 'system/initialize.php';
+require_once '../../initialize.php';
 
 
 /**
@@ -94,7 +94,6 @@ class FilePicker extends Backend
 //		$this->Template->action = ampersand(Environment::get('request'));
 		$this->Template->value = $this->Session->get('file_selector_search');
 
-		$GLOBALS['TL_CONFIG']['debugMode'] = false;
 		$this->Template->output();
 	}
 }
